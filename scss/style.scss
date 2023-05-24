@@ -1,0 +1,224 @@
+/*estilos para index*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* color de fondo con degradado como el nav y el footer, pero en reverso*/
+body {
+    background: linear-gradient(to left, #e1dbe2 , #ffffff);
+}
+
+/*estilo logo principal del sitio*/
+
+/*logo principal, se le hizo un media para que en pantalla movile no sea tan grande*/
+
+.logokm {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 1rem;
+    background-color: #f3f0f3;
+} 
+
+@media (max-width: 480px) {
+    .logokm {
+        width: 150px;
+    }
+}
+
+/*estilos menu de navegacion del sitio*/
+
+.navbar {
+    background: linear-gradient(to right, #16D9EB , #E2FAFC);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    
+    .navbar-nav .nav-link:hover {
+    color: white
+    }
+    .navbar-brand:hover {
+    color: white;
+}
+}
+
+
+/*estilo de contenido principal*/
+
+#grid-contenedor {
+    display: grid;
+    grid-template-areas:
+    "foto1 foto1 foto2 foto2"
+    "foto1 foto1 foto2 foto2"
+    "foto1 foto1 foto3 foto3"
+    "foto1 foto1 foto3 foto3";
+    gap: 5px;
+    margin: 1.1rem 0.3em;
+}
+
+    
+    .foto1, .foto2, .foto3 {
+    height: 150px;
+    background-size: cover;
+    background-position: center;}
+
+    @media (min-width: 1020px) {
+        .foto1, .foto2, .foto3 {
+            height: 300px;
+        }
+    }
+    
+    
+    .foto1{
+    background-image: url(../img/torta\ cumple\ 1.jpeg);
+    grid-area: foto1;
+    height: 100%;}
+    
+    .foto2{
+    background-image: url(../img/tarta\ frutal.jpeg);
+    grid-area: foto2;}
+    
+    .foto3 {
+    background-image: url(../img/bundin\ ingles.jpeg);
+    grid-area: foto3;
+}
+
+
+
+/*estilos para difentes fuentes y textos*/
+
+h1, h3, h4 {
+    font-family: 'Elsie',cursive;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+}
+      
+
+h2 {
+    margin: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    display: inline-block;
+    font-family:'Elsie', cursive;
+    font-size: 1.5rem;
+    background-color: rgb(218, 213, 213);
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px black ;   
+}
+  
+
+/*estilo de border*/
+hr {
+    border: none;
+    border-top: 3px solid #56e0ec;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*estilos para la seccion de video sumado a bootstrap*/
+.video { 
+    display: grid;
+    align-items: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+
+/*estilo pie de pagina*/
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #c92595 , #d3a5c4);
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logo-instagram {
+    width: 75px;
+    height: 75px;
+}
+
+/*icono de whatsapp con fixed*/
+
+.logo-whatsapp {
+    width: 50px;
+}
+.enlace-w {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+}
+
+/*icono de ir arriba*/
+
+.flecha-arriba {
+    width: 50px;
+    height: 50px;
+}
+
+/*Estilos para pagina contactos*/
+/* Estilos para el formulario */
+
+form {
+    background: linear-gradient(to bottom, #c92595 , #d3a5c4);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 20px;
+    max-width: 400px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+  
+form input,form textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  background-color: #16D9EB;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  
+  &:hover {
+  background-color: #e1dbe2;
+}
+}
