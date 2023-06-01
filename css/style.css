@@ -50,6 +50,7 @@ body {
   height: 150px;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
 }
 
 @media (min-width: 1020px) {
