@@ -248,3 +248,17 @@ form input[type="reset"] {
 }
 }
 
+
+/*estilos para section fotos*/
+
+.carousel-inner {
+    
+    .carousel-item {
+      img {
+        height: 35rem;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  

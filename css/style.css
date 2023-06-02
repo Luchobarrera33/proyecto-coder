@@ -222,4 +222,10 @@ form input[type=reset]:hover {
   border-radius: 10px;
 }
 
+/*estilos para section fotos*/
+.carousel-inner .carousel-item img {
+  height: 35rem;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
