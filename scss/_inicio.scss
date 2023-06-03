@@ -1,0 +1,77 @@
+#grid-contenedor {
+    display: grid;
+    grid-template-areas:
+    "foto1 foto1 foto2 foto2"
+    "foto1 foto1 foto2 foto2"
+    "foto1 foto1 foto3 foto3"
+    "foto1 foto1 foto3 foto3";
+    gap: 5px;
+    margin: 1.1rem 0.3em;
+}
+
+    .foto1, .foto2, .foto3 {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+    @media (min-width: 1020px) {
+        .foto1, .foto2, .foto3 {
+            height: 300px;
+        }
+    }
+    
+    
+    .foto1{
+    background-image: url(../img/torta\ cumple\ 1.jpeg);
+    grid-area: foto1;
+    height: 100%;}
+    
+    .foto2{
+    background-image: url(../img/tarta\ frutal.jpeg);
+    grid-area: foto2;}
+    
+    .foto3 {
+    background-image: url(../img/bundin\ ingles.jpeg);
+    grid-area: foto3;
+}
+
+h4 {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: rgb(218, 213, 213);
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px black ;   
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #56e0ec;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video { 
+    display: grid;
+    align-items: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.logo-whatsapp {
+    width: 50px;
+}
+.enlace-w {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+}

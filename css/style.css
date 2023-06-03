@@ -1,16 +1,32 @@
-/*estilos para index*/
 * {
   margin: 0;
   padding: 0;
 }
 
-/* color de fondo con degradado como el nav y el footer, pero en reverso*/
 body {
   background: linear-gradient(to left, #e1dbe2, #ffffff);
 }
 
-/*estilo logo principal del sitio*/
-/*logo principal, se le hizo un media para que en pantalla movile no sea tan grande*/
+h1, h3, h4 {
+  font-family: "Elsie", cursive;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  margin: 20px;
+  font-size: x-large;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
 .logokm {
   display: block;
   margin: 0 auto;
@@ -24,7 +40,6 @@ body {
     width: 150px;
   }
 }
-/*estilos menu de navegacion del sitio*/
 .navbar {
   background: linear-gradient(to right, #16D9EB, #E2FAFC);
   padding: 1rem;
@@ -38,7 +53,24 @@ body {
   color: white;
 }
 
-/*estilo de contenido principal*/
+footer {
+  text-align: center;
+  background: linear-gradient(to right, #c92595, #d3a5c4);
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.logo-instagram {
+  width: 75px;
+  height: 75px;
+}
+
+.flecha-arriba {
+  width: 50px;
+  height: 50px;
+}
+
 #grid-contenedor {
   display: grid;
   grid-template-areas: "foto1 foto1 foto2 foto2" "foto1 foto1 foto2 foto2" "foto1 foto1 foto3 foto3" "foto1 foto1 foto3 foto3";
@@ -74,27 +106,6 @@ body {
   grid-area: foto3;
 }
 
-/*estilos para difentes fuentes y textos*/
-h1, h3, h4 {
-  font-family: "Elsie", cursive;
-}
-
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 20px;
-}
-
-h2 {
-  margin: 20px;
-  font-size: x-large;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
 h4 {
   display: inline-block;
   font-size: 1.5rem;
@@ -106,7 +117,6 @@ h4 {
   border: solid 1px black;
 }
 
-/*estilo de border*/
 hr {
   border: none;
   border-top: 3px solid #56e0ec;
@@ -114,7 +124,6 @@ hr {
   margin-bottom: 20px;
 }
 
-/*estilos para la seccion de video sumado a bootstrap*/
 .video {
   display: grid;
   align-items: center;
@@ -126,21 +135,6 @@ p {
   margin-top: 30px;
 }
 
-/*estilo pie de pagina*/
-footer {
-  text-align: center;
-  background: linear-gradient(to right, #c92595, #d3a5c4);
-  padding: 5px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.logo-instagram {
-  width: 75px;
-  height: 75px;
-}
-
-/*icono de whatsapp con fixed*/
 .logo-whatsapp {
   width: 50px;
 }
@@ -151,16 +145,26 @@ footer {
   right: 15px;
 }
 
-/*icono de ir arriba*/
-.flecha-arriba {
-  width: 50px;
-  height: 50px;
+.card {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(218, 213, 213);
+  border: none;
+  border-color: transparent;
+  transition: border-color 0.5s ease;
+}
+.card:hover {
+  border: 3px solid #c92595;
+}
+.card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/*Estilos para pagina contactos*/
-/* Estilos para el formulario */
 form {
-  background: linear-gradient(to right, #c92595, #d3a5c4);
+  background: linear-gradient(to bottom, #c92595, #d3a5c4);
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -203,26 +207,6 @@ form input[type=reset]:hover {
   background-color: #e1dbe2;
 }
 
-/*Estilos productos*/
-.card {
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: rgb(218, 213, 213);
-  border: none;
-  border-color: transparent;
-  transition: border-color 0.5s ease;
-}
-.card:hover {
-  border: 3px solid #c92595;
-}
-.card .card-img-top {
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/*estilos para section fotos*/
 .carousel-inner {
   background-color: #f0f0f0;
   padding: 20px;
