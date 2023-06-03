@@ -1,3 +1,5 @@
+/*fuentes*/
+/*colores*/
 * {
   margin: 0;
   padding: 0;
@@ -124,15 +126,12 @@ hr {
   margin-bottom: 20px;
 }
 
-.video {
-  display: grid;
-  align-items: center;
-  margin: 20px;
-}
-
-p {
-  font-size: 1rem;
-  margin-top: 30px;
+.texto1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: auto;
 }
 
 .logo-whatsapp {
@@ -205,6 +204,10 @@ form input[type=reset] {
 form input[type=submit]:hover,
 form input[type=reset]:hover {
   background-color: #e1dbe2;
+}
+
+p {
+  margin-top: 30px;
 }
 
 .carousel-inner {

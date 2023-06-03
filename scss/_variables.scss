@@ -1,9 +1,16 @@
-
+/*fuentes*/
 $fuente-principal: 'Elsie',cursive;
 $fuente-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+/*colores*/
 $color-principal: linear-gradient(to right, #c92595 , #d3a5c4);
 $color-secundario: linear-gradient(to right, #16D9EB , #E2FAFC);
 $color-terciario: linear-gradient(to bottom, #c92595, #d3a5c4);
 
-
+@mixin parrafo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: auto;
+}
