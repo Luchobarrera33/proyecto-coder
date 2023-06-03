@@ -1,3 +1,5 @@
+@import "variables";
+
 /*estilos para index*/
 
 *{
@@ -31,7 +33,7 @@ body {
 /*estilos menu de navegacion del sitio*/
 
 .navbar {
-    background: linear-gradient(to right, #16D9EB , #E2FAFC);
+    background: $color-secundario;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -149,7 +151,7 @@ p {
 /*estilo pie de pagina*/
 footer {
     text-align: center;
-    background: linear-gradient(to right, #c92595 , #d3a5c4);
+    background: $color-principal;
     padding: 5px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -182,7 +184,7 @@ footer {
 /* Estilos para el formulario */
 
 form {
-    background: linear-gradient(to bottom, #c92595 , #d3a5c4);
+    background: $color-principal;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -252,13 +254,19 @@ form input[type="reset"] {
 /*estilos para section fotos*/
 
 .carousel-inner {
-    
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  
     .carousel-item {
       img {
         height: 35rem;
         object-fit: cover;
+        border-radius: 10px;
       }
     }
   }
-  
   
