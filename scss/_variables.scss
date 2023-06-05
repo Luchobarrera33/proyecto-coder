@@ -6,6 +6,7 @@ $fuente-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $color-principal: linear-gradient(to right, #c92595 , #d3a5c4);
 $color-secundario: linear-gradient(to right, #16D9EB , #E2FAFC);
 $color-terciario: linear-gradient(to bottom, #c92595, #d3a5c4);
+$color-4to: linear-gradient(to left, #e1dbe2 , #ffffff);
 
 @mixin parrafo {
     display: flex;
@@ -14,3 +15,19 @@ $color-terciario: linear-gradient(to bottom, #c92595, #d3a5c4);
     margin-top: 40px;
     padding: auto;
 }
+
+@keyframes animacion {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  h1, h2, section {
+    opacity: 0;
+    animation: animacion 1s ease-in-out forwards;
+  }
+  
+  

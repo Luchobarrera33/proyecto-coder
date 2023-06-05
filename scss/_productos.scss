@@ -5,7 +5,9 @@
     background-color: rgb(218, 213, 213);
     border: none;
     border-color: transparent;
-    transition: border-color 0.5s ease;
+    transition: border-color 1s ease;
+    transition-property: transform;
+    transition-duration: 1s;
 
     &:hover {
     border: 3px solid #c92595;
@@ -15,6 +17,9 @@
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    
+    }
 }
+
+.card:hover {
+    transform: scale(1.07);
 }
