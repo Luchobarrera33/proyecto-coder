@@ -27,7 +27,20 @@ $color-4to: linear-gradient(to left, #e1dbe2 , #ffffff);
   
   h1, h2, section {
     opacity: 0;
-    animation: animacion 1s ease-in-out forwards;
+    animation: animacion 2s ease-in-out forwards;
+  }
+
+  @keyframes animacionLogo {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
-  
+  .container .logokm {
+    animation: animacionLogo 1s ease-in-out forwards;
+  }
